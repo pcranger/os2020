@@ -1,0 +1,37 @@
+ 
+find | grep list 
+#./Desktop/study/other/graph/graph/bfs_list.cpp
+#./Desktop/study/other/graph/graph/adjacency_list.cpp
+#./Desktop/study/other/graph/graph/adjacency_list.exe
+#./Desktop/study/other/graph/graph/bfs_list.exe
+#./Desktop/study/other/graph/graph/adjacency_list.o
+#./Desktop/study/other/graph/graph/adjacency_list.jpg
+#./.mozilla/firefox/k74f0jyc.default-release/broadcast-listeners.json
+#./.mozilla/firefox/k74f0jyc.default-release/TRRBlacklist.txt
+#./.mozilla/firefox/k74f0jyc.default-release/blocklist.xml
+
+
+wc -l /etc/passwd
+#Count how many lines that /etc/passwd has
+#output: 44 /etc/passwd
+
+free -h | head -2
+#Check how much memory that your machine has, not free memory
+#output: 
+#              total        used        free      shared  buff/cache   available
+#Mem:           3.8G        1.9G        702M        323M        1.2G        1.3G
+
+cat /proc/cpuinfo | grep 'cpu cores' | head -1
+#Find how many logical core that your CPU has
+#output:
+#cpu cores	: 2
+
+find / -type f -name "*.jpg"
+#Count how many .jpg files that you have in your photo
+#directory
+#/home/hieu/.local/share/Trash/files/jacobson_08-02.jpg
+#/home/hieu/.local/share/Trash/files/examen oral de français.jpg
+#/home/hieu/.local/share/Trash/files/maxresdefault.jpg
+#/home/hieu/.local/share/Trash/files/deer pictures/1308482-amazing-winter-deer-wallpaper-#backgrounds-2560x1600-for-phones.jpg
+#/home/hieu/.local/share/Trash/files/deer pictures/deer_winter_night_129602_1920x1080.jpg
+

@@ -1,0 +1,43 @@
+ps -U root -u root u
+#output
+#root     13833  0.0  0.0      0     0 ?        I    09:42   0:00 [kworker/2:0-mm
+#root     13881  0.0  0.0      0     0 ?        I    09:43   0:00 [kworker/2:3]
+#root     13907  0.0  0.0      0     0 ?        I    09:44   0:00 [kworker/u16:3]
+#root     13920  0.0  0.0      0     0 ?        I    09:44   0:00 [kworker/3:0-cg
+#root     13921  0.0  0.0      0     0 ?        I    09:44   0:00 [kworker/3:3-ev
+#root     22076  0.0  0.0      0     0 ?        I<   Jan15   0:05 [kworker/0:2H-k
+#root     23447  0.0  0.0   4504     0 ?        S    Jan15   0:00 bpfilter_umh
+#root     25453  0.0  0.0      0     0 ?        S<   Jan15   0:00 [loop22]
+#root     27092  0.0  0.0      0     0 ?        S<   Jan15   0:00 [loop3]
+#root     30568  0.0  0.0      0     0 ?        I<   Jan15   0:00 [kworker/1:2H-e
+
+nautilus
+#shows nautilus
+
+pgrep nautilus
+#1772 nautilus-deskto
+#15278 nautilus
+
+cat /proc/15278/status | head -10 
+#Name:	nautilus
+#Umask:	0022
+#State:	S (sleeping)
+#Tgid:	15278
+#Ngid:	0
+#Pid:	15278
+#PPid:	13940
+#TracerPid:	0
+#Uid:	1000	1000	1000	1000
+#Gid:	1000	1000	1000	1000
+
+kill -s STOP 31248
+#Pause the nautilus task
+#Program not responding
+
+kill -s CONT 31248
+#resume that nautilus task
+#Program work as normal
+
+kill -s KILL 31248
+#Terminate that nautilus task
+#Program closed
